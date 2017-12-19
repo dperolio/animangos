@@ -1,0 +1,120 @@
+/* media Queries */
+
+/* TABLET ONLY - PORTRAIT & LANDSCAPE */
+@media only screen and (min-width: 600px) and (max-width: 1239px) and (min-height: 600px) { 
+	#nav .mi-multi .mi-a:after {
+		content: ''!important;
+	}
+	.mi-a .mi-span {
+		display: none;
+	}
+	#nav .icon {
+		font-size: 24px;
+	}
+	#nav .mi-tab-span {
+		display: block;
+	}
+	#help-side {
+		margin-bottom: 124px!important;
+	}
+	#settings-side, #features-side {
+		margin-bottom: 55px;
+	}
+	#nav .mi-a.active:after {
+		width: 6px;
+	}
+	#nav .browse-head {
+		padding: 4px 15px;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	#content .wrapper {
+		border-right: 1px solid #ccc;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-height: 640px) {
+	#nav #help-side { display: none; }
+}
+
+@media only screen and (min-height: 655px) and (min-width: 600px) {
+	.main .custom-head-banner.home {
+		height: 600px;
+	}
+}
+
+@media only screen and (min-width: 430px) {
+	.custom-head-banner .prof-name {
+        font-size: 28px;
+        line-height: 22px;
+    }
+    .user-favorites .favorites-li {
+		padding-right: 20px;
+	}
+    .profile-buts .fol-me-me {
+    	display: inline;
+    }
+    .custom-head-banner {
+    	#user-opts {
+        	display: inline-block;
+        	line-height: 20px;
+			color: #333;
+    	}
+    }
+    .custom-head-banner .detail-cont {
+    	padding: 7px 10px;
+    	margin-right: 5px;
+    }
+    .custom-head-banner .detail-text {
+        font-size: 11px;
+    }
+    .custom-head-banner .detail-amnt {
+    	font-size: 29px;
+    	line-height: 29px;
+    }
+    .follow-me {
+    	width: 100px;
+    }
+    .follow-me.following .icon {
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.custom-head-banner .profile-top-info-cont {
+		width: 70%;
+	}
+	.custom-head-banner .profile-detail-stats {
+        width: 30%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	select {
+		padding: 2px 30px 2px 8px;
+		-webkit-appearance: none;
+		background: #f5f5f5 url(../images/select-bg.jpg) right;
+	}
+	.master-user-reply.topone .reply-buts {
+		margin-top: 0;
+	}
+	.more-dropdown .icon {
+		top: -2px;
+	    left: -4px;
+	}
+	.item-but {
+		padding-left: 5px;
+	}
+	.login-close .icon, .queue-item .delete {
+		top: -3px;
+	}
+	.signup-select {
+		 margin-right: 5px;
+	}
+	.clear-rating .icon {
+		position: relative;
+		left: -4px;
+		top: -1px;
+	}
+}

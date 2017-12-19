@@ -1,0 +1,204 @@
+#nav {
+	min-height: 100%;
+	display: block;
+	box-shadow: inset -20px 0 6px -17px rgba(0,0,0,0.5);
+	background-color: #141414;
+	width:180px;
+	position:absolute;
+	z-index: 1000;
+    .transform(translate(-180px, 0));
+	.trans-trans(0.3s);
+	.sidenav {
+		width:100%;
+		list-style:none;
+	}
+	.nav-prof-img-cont {
+		display: block;
+		width: 180px;
+		height: 180px;
+		position: relative;
+		&:hover .nav-prof-img-span {
+			background-color: rgba(0,0,0,.85);
+			border-bottom: 2px solid transparent;
+			.transition(background-color 0.2s);
+		}
+	}
+	.nav-prof-img-span {
+		position: absolute;
+		bottom: 0;
+		color: #fff;
+		font-weight: bold;
+		font-family: @droid;
+		font-size: 10px;
+		text-transform: uppercase;
+		padding: 3px 0;
+		width: 90%;
+		text-align: center;
+		margin: 7px;
+		border-radius: 3px;
+		background-color: rgba(189, 46, 26, .8);
+		border-bottom: 2px solid #790f00;
+		.transition(background-color 0.2s);
+	}
+	.search-mi, .mi, {
+		width:100%;
+		display:block;
+	}
+	.browse-head, .browse-account-head {
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: bold;
+		color: #999;
+		background: #040404;
+		padding: 4px 23px;
+		font-family: @droid;
+	}
+	.mi-a.active {
+		background-color: #333;
+		color: #eee;
+		border-right: 7px solid #666;
+		.icon {
+			color: #fff;
+		}
+		&:hover {
+			background-color: #333;
+		}
+		/*&:after {
+			content: '';
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: linear-gradient(to bottom, #fc2424, #b50000);
+			width: 7px;
+			display: block;
+			border-right: 1px solid #1b1b1b;
+		}*/
+	}
+	.mi {
+		border-bottom: 1px solid #1c1c1c;
+		box-shadow: 0 -1px 0 rgba(0,0,0,0.4) inset;
+		&:hover {
+			background-color: rgba(255, 255, 255, .025);
+			.mi-a {
+				color: #888;
+			}
+			.mi-a.active {
+				color: #eee;
+			}
+		}
+	}
+	.mi-a {
+		color:#666;
+		display:block;
+		width:100%;
+		padding: 10px 25px;
+		position: relative;
+		font-size: 13px;
+		line-height: 30px;
+		padding: 7px 0 7px 25px;
+		font-size: 12px;
+	}
+	.icon {
+		width: 30px;
+		display: inline-block;
+		font-size: 14px;
+		color: #666;
+	}
+	.search-mi {
+		background-color: #222;
+		display: block;
+	}
+	.search-mini {
+		color: #777;
+		font-weight: 700;
+		display: block;
+		width: 100%;
+		padding: 1em 2em;
+		-webkit-transition: .2s;
+		-moz-transition: .2s;
+		-ms-transition: .2s;
+		-o-transition: .2s;
+		transition: .2s;
+	}
+	.search-mini-but {
+		border: none;
+		background: none;
+		padding: 0;
+		margin: 0;
+		line-height: normal;
+		text-align: left;
+		float: left;
+	}
+	#mini-search-form {
+		position: relative;
+		width: auto;
+		top: 0;
+		right: 0;
+	}
+	#main-mini-search {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-color: #222;
+		border: 0;
+		font-size: 13px;
+		-webkit-transition: .2s;
+		-moz-transition: .2s;
+		-ms-transition: .2s;
+		-o-transition: .2s;
+		transition: .2s;
+		color: #fff;
+		outline: none;
+	}
+	.mi-tab-span {
+		display: none;
+		font-size: 9px;
+		margin-left: -7px;
+		position: relative;
+		top: 4px;
+		font-weight: normal;
+		text-transform: uppercase;
+		line-height: 16px;
+	}
+	.mi-tab-span.discover-mi {
+		left: -6px;
+	}
+	.mi-tab-span.activity-mi {
+		left: -5px;
+	}
+	.mi-tab-span.anime-mi {
+		left: 2px;
+	}
+	.mi-tab-span.industry-mi {
+		left: -6px;
+	}
+}
+
+.mi-a {
+	.notify-alert {
+		margin-top: 12px;
+		margin-right: 15px;
+		border: 1px solid #d30000;
+		.notify-num {
+			top: -7px;
+			left: 3px;
+		}
+	}
+}
+
+#nav #help-side {
+	border-top: 1px solid #191919;
+}
+
+#help-side .mi-tab-span {
+	left: 7px;
+}
+
+#settings-side .mi-tab-span, #features-side .mi-tab-span {
+	left: -2px;
+}
+
+#nav.opened {
+	display: block;
+}

@@ -1,0 +1,176 @@
+#queue-contain {
+	margin-top: 11px;
+	opacity: 0;
+	.transition(opacity 0.3s);
+}
+
+#queue-contain.opacityfull {
+	opacity: 1;
+	.transition(opacity 0.3s);
+}
+
+#queue-contain:first-child {
+	margin-left: 10px;
+}
+
+#queue-o-cont {
+	height: 165px;
+}
+
+.queue-item {
+	background-color: #141414;
+	width: 90px;
+	height: 133px;
+	display: inline-block;
+	position: relative;
+	margin: 0 4px;
+	opacity: .65;
+	.transition(opacity 0.2s);
+	&:hover {
+		opacity: 1!important;
+		.transition(opacity 0.2s);
+		.qi-close {
+			opacity:1;
+			.transition(opacity 0.2s);
+		}
+	}
+	.qi-img {
+		cursor: move;
+		cursor: grab;
+		cursor: -moz-grab;
+		cursor: -webkit-grab;
+	}
+	.qi-a {
+		display: block;
+	}
+	.qi-close {
+		position: absolute;
+		border-radius: 100%;
+		height: 30px;
+		width: 30px;
+		background-color: #fff;
+		text-align: center;
+		font-weight: bold;
+		color: #222;
+		border: 2px solid #fff;
+		top: 0;
+		left: 0;
+		margin-top: -10px;
+		margin-left: -10px;
+		font-size: 30px;
+		opacity: 0;
+		box-shadow: 0 0 10px #000;
+		.transition(opacity 0.2s);
+	}
+	.delete {
+	    margin: 0 -10px;
+	    padding: 4px;
+	    position: relative;
+	    top: -2px;
+	}
+}
+
+.q-open {
+	#queue {
+		.transform(translateY(0));
+		.trans-trans(0.3s);
+	}
+	.navbar {
+		z-index: 1001;
+		.transform(translateY(200px));
+		-webkit-transition: -webkit-transform .3s, z-index 0s 0s;
+		-moz-transition: -moz-transform .3s, z-index 0s 0s;
+		-ms-transition: -ms-transform .3s, z-index 0s 0s;
+		-o-transition: -o-transform .3s, z-index 0s 0s;
+		transition: transform .3s, z-index 0s 0s;
+	}
+	.navbar #queue-but {
+		background: #000;
+		border-right: 1px solid #222;
+		border-left: 1px solid #222;
+		color: #fff;
+	}
+}
+
+#queue {
+	display: none;
+	top: 0;
+	position: fixed;
+    width: 100%;
+    background-color: #141414;
+    height: 200px;
+    z-index: 99999;
+    .accel;
+    .transform(translateY(-200px));
+	.trans-trans(0.3s);
+    .q-a-or-m {
+    	width: 100%;
+    	height: 35px;
+    	background-color: #202020;
+    }
+    .sel-anime, .sel-manga {
+    	color: #eee;
+	    font-weight: bold;
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    line-height: 35px;
+	    background-color: #bd2e1a;
+	    display: inline-block;
+	    width: auto;
+	    position: relative;
+	    padding: 0 20px;
+	    .transition(0.2s);
+	    &:hover {
+	    	background-color: #da4834;
+	    	.transition(0.2s);
+	    }
+    }
+    .sel-manga {
+		margin-left: -4px;
+		border-left: 1px solid #d2482c;
+    }
+    .sel-manga.active, .sel-anime.active {
+    	background-color: #141414;
+    }
+    .delete {
+    	padding-right: 5px;
+    }
+    .up {
+    	padding-left: 3px;
+		font-size: 15px;
+		position: relative;
+		top: 2px;
+    }
+    .clear-queue, .close-queue {
+    	margin-left: 40px;
+	    display: inline-block;
+	    color: #999;
+	    .transition(color 0.2s);
+	    &:hover {
+	    	color: #fff;
+	    	.transition(color 0.2s);
+	    }
+    }
+    .close-queue {
+		margin-left: 0;
+	    float: right;
+	    position: relative;
+	    top: 8px;
+	    margin-right: 45px;
+    }
+}
+
+.ui-sortable-helper {
+	border: 2px dashed #fff;
+}
+
+.queue-item.dragging {
+	.qi-close {
+			opacity:1;
+	}
+	.qi-img {
+		cursor:grabbing;
+	  	cursor:-moz-grabbing;
+	  	cursor:-webkit-grabbing;
+	}
+}

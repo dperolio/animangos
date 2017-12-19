@@ -1,0 +1,426 @@
+.login-total-cont {
+  width: 100%;
+  height: 717px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  overflow: hidden;
+  .accel;
+  .transform(translateX(120%));
+  .trans-trans(0.5s linear);
+}
+
+.login-background {
+  background: #141414 url('../images/anime-bg.png');
+  width: 100%;
+  height: 200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.login-total-cont.slideover {
+  .transform(translateX(0));
+  .trans-trans(0.5s linear);
+}
+
+.login-name-label, .login-pass-label {
+  color: #777;
+  padding-left: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  display: block;
+}
+
+#login-name, #signup-name, #login-pass, #signup-pass, #signup-location, #signup-username {
+  margin-bottom: 15px;
+}
+
+.login-contain {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  //margin-top: 28px;
+}
+
+.flipper.topnone {
+	top: 0!important;
+}
+
+.login {
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 3px;
+  background: #fff;
+  width: 100%;
+  padding: 20px 20px 20px;
+}
+
+#login-logo, #signup-logo {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #777;
+  text-align: center;
+  text-shadow: 1px 1px #fff;
+  .gradient(#fff, #eee);
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  padding: 25px 0;
+}
+
+#login-logo-img, #signup-logo-img {
+  text-indent: -9999px;
+  margin: 0 auto;
+  background: url('../images/login-logo.png') no-repeat 0 0;
+  height: 184px;
+  width: 201px;
+  display: block;
+  position: relative;
+}
+
+
+#signup-logo-img {
+  background-position: 45px -185px;
+  height: 100px;
+}
+
+.login .remember-me-label {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  top: -1px;
+}
+
+#remember-me {
+  margin-top: 27px;
+}
+
+.login input[type="text"], .login input[type="password"] {
+  margin: 5px;
+  padding: 0 10px;
+  width: 100%;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.or {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+.or-txt {
+  background: #fff;
+height: 25px;
+width: 25px;
+border-radius: 3px;
+border: 1px solid #ccc;
+padding: 5px;
+z-index: 2;
+  position: relative;
+}
+
+.or:after {
+  content:'';
+  width:100%;
+  position: absolute;
+  height: 1px;
+  background-color: #ddd;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 6px
+}
+
+.login input[type="text"]:focus, .login input[type="password"]:focus {
+  border-color: #7dc9e2;
+  outline-color: #dceefc;
+  outline-offset: 0;
+}
+
+.facebook-button {
+  width: 48%;
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  .gradient(#4d769e, #486f94);
+  display: inline-block;
+  border-radius: 5px;
+  border: solid 1px #3d5e7e;
+  box-shadow: inset 0px 1px rgba(255,255,255,0.2);
+  text-shadow: 0px 1px rgba(0,0,0,0.4);
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.3s;
+
+ &:active {
+    top: 2px;
+}
+}
+
+.facebook-button.twitter {
+  margin-right: 0;
+  border-color: #0088bc;
+  .gradient(#00abeb, #00a1dd);
+}
+
+.signup-options {
+  margin-bottom: 90px;
+}
+
+.login-instead {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: 50px;
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.switch-to-login {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+  &:hover {
+    color: #bf1216;
+    text-decoration: underline;
+  }
+}
+
+
+.login-submit-error {
+  color: #fff;
+  background: #ff0000;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 3px 10px;
+  opacity: 0.75;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Transform translate mixin */
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+     -moz-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y);
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);
+}
+
+/* Animation frames mixin */
+.animationFrames(@offset){
+  0% { .translate(0, 0) }
+  25% { .translate(-@offset, 0) }
+  50% { .translate(@offset/2, 0) }
+  75% { .translate(-@offset, 0) }
+  100% { .translate(0, 0) }
+}
+
+/* Shake animations, we cannot write mixin for theese prefixes due to LESS restrictions */
+@-webkit-keyframes shake { .animationFrames(20px); }
+@-moz-keyframes shake { .animationFrames(20px); }
+@-ms-keyframes shake { .animationFrames(20px); }
+@-o-keyframes shake { .animationFrames(20px); }
+@keyframes shake { .animationFrames(20px); }
+
+/* Animation mixin */
+.animation(@name, @time:0.3s){
+  -webkit-animation: @name @time;
+     -moz-animation: @name @time;
+      -ms-animation: @name @time;
+       -o-animation: @name @time;
+          animation: @name @time;
+}
+
+/* Mixing shake animation with shake class */
+.login-contain.shake{
+  .animation(shake);
+}
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  perspective: 1000;
+  position: absolute;
+  left: 0;
+  width: 100%!important;
+  overflow: visible;
+  visibility: visible;
+  display: block;
+}
+  /* flip the pane when hovered */
+  .flip-container.flipit .flipper {
+    .transform(rotateY(180deg));
+  }
+
+.flip-container, .front, .back {
+  width: 100%;
+}
+
+.flipper.itsback {
+    height: 574px;
+}
+
+.flipper.itsback .front .login-contain {
+	height: 574px;
+	overflow: hidden;
+}
+
+/* flip speed goes here */
+.flipper {
+  .accel;
+  .transition(.6s);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: -342px;
+  width: 100%;
+  height: 665px;
+  visibility: visible;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+  .accel;
+  .transform(rotateY(180deg));
+}
+
+.facebook-button .icon {
+  font-size: 20px;
+  float: left;
+  margin-left: 5px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(0,0,0,.1);
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.login-close {
+  position: absolute;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+  color: #222;
+  border: 2px solid #fff;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  box-shadow: 0 0 4px #000;
+  z-index: 9999;
+  .icon {
+    margin: 0 -10px;
+    padding: 4px;
+    position: relative;
+    top: -2px;
+    padding-right: 4px;
+  }
+}
+
+.signup-form-but.signupbut {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.forgot-pass {
+  display: block;
+  margin-left: 10px;
+  font-size: 11px;
+  color: #aaa;
+  &:hover {
+    color: #bf1216;
+    text-decoration: underline;
+  }
+}
+
+#signup-dob-selects {
+  width: 100%;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+.signup-select {
+  margin-right: 28px;
+  color: #555;
+}
+
+#signup-dob-year {
+  margin-right: 0;
+}
+
+.signup-gender-radio {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.gender-span {
+  position: relative;
+  top: -2px;
+  color: #555;
+}
+
+.radio {
+  margin-right: 15px;
+}
+
+.accept-tos {
+  font-size: 11px;
+  line-height: 14px;
+  color: #777;
+  margin-top: 20px;
+  text-align: center;
+}

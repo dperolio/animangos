@@ -1,0 +1,486 @@
+.user-ava-a {
+    line-height: 0;
+    display: inline-block;
+    width: 60px;
+    border-radius: 3px;
+    overflow: hidden;
+    .transition(width 0.1s linear);
+}
+
+.user-ava-cont {
+    float: left;
+    margin-right: 8px;
+    line-height: 0;
+}
+
+.s-w-poster, .s-w-post-focus {
+    color: #333;
+    font-weight: bold;
+}
+
+.s-w-timestamp {
+    color: #aaa;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-right: 5px;
+    display: block;
+}
+
+.likes-but {
+    position: relative;
+    display: inline-block;
+    padding: 0 9px;
+    text-align: center;
+    font-weight: normal;    
+    .gradient(#fff, #eee);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-shadow: 1px 1px #fff;
+    font-size: 11px;
+    color: #888;
+    margin-top: 3px;
+    line-height: 12px;
+}
+
+.likes-but.liked {
+	background: #44bd1a;
+	border: none;
+	text-shadow: none;
+	color: #fff;
+}
+
+.likes-but {
+	display: none;
+}
+
+.likes-but.active, .follow-me.active {
+	display: inline-block;
+}
+
+.likes-but.liked.active {
+	opacity: 1!important;
+}
+
+.items-added {
+	position: relative;
+	margin-top: 20px;
+}
+
+.inner-added {
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 20px 10px 15px 20px;
+}
+
+.more-dropdown-cont {
+	float: right;
+}
+
+.more-dropdown {
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #777;
+    height: 18px;
+    width: 18px;
+    float: right;  
+    opacity: 0;
+    display: none;
+    .icon {
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    color: #777;
+	    font-size: 13px;
+	}
+}
+
+.s-w-user-act-field {
+	display: inline;
+	color: #888;
+}
+
+.s-w-entry {
+	display: block;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.s-w-user-post {
+    line-height: 18px;  
+    margin-top: 2px;
+    color: #555;  
+    margin-bottom: 15px
+}
+
+.master-user-reply .user-ava-a, .single-user-reply .user-ava-a {
+    width: 36px;
+}
+
+.post-reply-comments {
+    border: 1px solid #eee;
+	padding: 0 10px 10px 10px;
+	background: #f5f5f5;
+	border-bottom: none;
+}
+
+.new-reply {
+    width: 100%;
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    resize: none;
+    outline: none;
+}
+
+.reply-textarea-cont {
+    float: right;
+    width: 100%;
+    margin-right: -46px;
+    display: block;
+    padding-right: 46px;
+    .transition(all 0.1s linear);
+}
+
+.master-user-reply {
+    padding-top: 15px;
+}
+
+.upop:hover, .s-w-post-focus:hover {
+	text-decoration: underline;
+}
+
+.initial-post {
+	.likes-but {
+		line-height: 16px;
+	}
+	&:hover {
+		.upop, .s-w-post-focus {
+			color: #bf1216;
+		}
+		.s-w-timestamp, .likes-but {
+			opacity: 1;
+		}
+		.likes-but {
+			opacity: 1;
+			&:hover {
+				border-color: #bbb;
+				background: #fff;
+			}
+		}
+		.likes-but.liked {
+			&:hover {
+				background: #44bd1a;
+			}
+		}
+		.more-dropdown {
+		    opacity: 0.6;
+	        &:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.s-w-reply-likes {
+	color: #31a00e;
+	font-weight: bold;
+	font-size: 11px;
+	margin-left: 2px;
+	margin-right: 8px;
+}
+
+.single-user-reply {
+	padding-bottom: 15px;  
+    padding-top: 15px;  
+    border-bottom: 1px solid #fff;
+	&:hover {
+		.upop {
+			color: #bf1216;
+		}
+		.s-w-timestamp, .likes-but {
+			opacity: 1;
+		}
+		.likes-but {
+			opacity: 1;
+			&:hover {
+				border-color: #bbb;
+				background: #fff;
+			}
+		}
+		.likes-but.liked {
+			&:hover {
+				background: #44bd1a;
+			}
+		}
+		.more-dropdown {
+		    opacity: 0.6;
+		    &:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.s-w-user-post {
+    	margin-bottom: 0;
+	}
+}
+
+.new-reply.focused ~ .reply-buts {
+	display: block;
+}
+
+.new-reply ~ .reply-buts {
+	display: none;
+}
+
+.reply-post-comment[disabled="disabled"] {
+     opacity: 0.5;
+     cursor: default;
+     &:hover {
+     	background-color: #ac2a24;
+     }
+}
+
+.reply-post-comment, .reply-cancel {
+	border-radius: 3px;
+    border: 0;
+    background-color: #ac2a24;
+    color: #fff;
+    padding: 7px 10px;
+    font-weight: bold;
+    &:hover {
+    	background-color: lighten(#ac2a24, 10%);
+    }
+}
+
+.reply-cancel {
+	background: #fff;  
+    color: #666;
+    text-shadow: 1px 1px #fff;
+    border: 1px solid #ccc;
+    &:hover {
+    	background-color: #fff;
+    	border-color: #aaa;
+    }
+}
+
+.single-user-reply .s-w-timestamp {
+	display: inline-block;
+}
+
+.feed-separator {
+	height: 30px;
+	border-top: 1px solid #eee;
+	.rad-gradient(#eee -300%, #fff);
+	margin-top: 20px;
+}
+
+.master-user-reply.submitting {
+	opacity: 0.4!important;
+	.transition(opacity 0.2s);
+}
+
+.shareThoughts {
+	position: relative;
+}
+
+.shareThoughts > .loader {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+}
+
+.master-user-reply.topone {
+	margin: 30px 0 15px 0;
+	opacity: 1;
+	.transition(opacity 0.2s);
+	.new-reply {
+		.transition(min-height 0.1s linear);
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.reply-buts {
+		padding: 5px;
+		float: right;
+		margin-top: 4px;
+	}
+}
+
+.master-user-reply.full {
+	.user-ava-a {
+		width: 60px;
+		.transition(width 0.1s linear);
+	}
+	.user-ava-cont {
+		display: none;
+	}
+	.reply-textarea-cont {
+		margin-right: 0;
+		padding-right: 0;
+	}
+}
+
+.master-user-reply.full.topone {
+	.new-reply {
+		min-height: 125px;
+		.transition(min-height 0.1s linear);
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.new-reply-more-options {
+		display: block;
+	}
+}
+
+#spoiler-check {
+	position: relative;
+	top: 2px;
+}
+
+.spoiler-check-label {
+	color: #777;
+	margin-right: 10px;
+}
+
+.new-reply-more-options {
+	height: 50px;
+	background: #f5f5f5;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: -6px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border: 1px solid #ddd;
+	display: none;
+}
+
+.post-type-options {
+	float: left;
+	height: 100%;
+	display: none;
+}
+
+.post-type {
+	color: #aaa;
+	text-shadow: 1px 1px #fff;
+	font-size: 24px;
+	border: 0;
+	background: rgba(0, 0, 0, .025);
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	border-right: 1px solid #fdfdfd;
+	padding: 0 15px;
+	display: inline-block;
+	float: left;
+	&:hover {
+		color: #777;
+		background: none;
+	}
+}
+
+.all-comments {
+	border: 1px solid #e0e0e0;
+	padding: 7px 15px;
+	color: #777;
+	font-weight: bold;
+	cursor: pointer;
+	.gradient(#fff, #f5f5f5);
+	.transition(color 0.1s);
+	.icon {
+		padding-left: 5px;
+	}
+	&:hover {
+		color: #333;
+		.transition(color 0.1s);
+	}
+}
+.who-likes-initial {
+	float: left;
+	display: block;
+	margin-bottom: 15px;
+	.user-ava-cont {
+		margin-right: 3px;
+	}
+	.user-ava-a {
+		width: 26px;
+	}
+	.and-more-likes {
+		display: inline-block;
+		background-color: #f5f5f5;
+		padding: 0 6px;
+		border-radius: 3px;
+		border: 1px solid #dfdfdf;
+		height: 26px;
+		float: left;
+		color: #888;
+		font-weight: bold;
+		text-shadow: 1px 1px #fff;
+		&:hover {
+			background-color: #fff;
+			color: #31a00e;
+		}
+	}
+	.and-more-likes-span {
+		position: relative;
+		top: 3px;
+		font-size: 18px;
+	}
+}
+
+#share-on-fb {
+	display: none;
+}
+
+.share-on-fb-label {
+	color: #aaa;
+	font-size: 16px;
+	margin-right: 10px;
+	position: relative;
+	top: 1px;
+	cursor: pointer;
+}
+
+#share-on-fb:checked ~ .share-on-fb-label {
+	color: #3a5897;
+}
+
+.loader-comments .loader {
+	margin-top: 10px;
+}
+
+.master-user-reply.shadow {
+	box-shadow: 0 -10px 50px -16px #ccc;
+}
+
+.post-reply-comments.showlots {
+	box-shadow: inset 0 30px 20px -27px #e5e5e5;
+	padding: 0 0px 0px 10px;
+	max-height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		background-color: rgb(200, 200, 200)!important;
+	}
+	.mCustomScrollBox:hover .mCSB_dragger .mCSB_dragger_bar {
+		background-color: rgb(150, 150, 150)!important;
+	}
+	.more-dropdown-cont {
+		margin-right: 30px;
+	}
+}
+
+.s-w-entry .master-user-reply {
+	background: #f5f5f5;
+	margin-left: 80px;
+	padding: 10px;
+}
+
+.load-all-comments-cont-ul {
+	display: none;
+}

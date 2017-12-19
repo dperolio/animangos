@@ -1,0 +1,133 @@
+*, *:after, *:before { .box-sizing(border-box); }
+
+::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #777;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+ font-weight: normal;
+ color: #777;
+}
+:-ms-input-placeholder {  
+ font-weight: normal;
+ color: #777;
+}
+
+textarea::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #aaa;
+}
+textarea::-moz-placeholder {  /* Firefox 19+ */
+ font-weight: normal;
+ color: #aaa;
+}
+textarea:-ms-input-placeholder {  
+ font-weight: normal;
+ color: #aaa;
+}
+
+// BOX SIZING AND BODY******************************************************************************************************
+input[type="text"] { font-family: @arial; font-size: 12px; }
+a { text-decoration: none; }
+fieldset { height: 100%; }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// GENERAL CLASSES**********************************************************************************************************
+.clear { clear: both; }
+.right,	.right-side { float: right; }
+.left { float: left; }
+.center { text-align: center; }
+.strong { font-weight: bold; display: inline; }
+.inline { display: inline; }
+.fixed { position: fixed; }
+
+.loader {
+	display: none;
+	margin: 0 auto;
+	-moz-animation: loading 1s linear infinite;
+	-webkit-animation: loading 1s linear infinite;
+	-o-animation: loading 1s linear infinite;
+	-ms-animation: loading 1s linear infinite;
+	animation: loading 1s linear infinite;
+}
+
+.loader.queue-lo {
+	margin-top: 3%;
+	opacity: 0.4;
+	position: absolute;
+	left: 49%;
+}
+
+@-moz-keyframes loading{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(360deg)}}@-webkit-keyframes loading{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@-o-keyframes loading{from{-o-transform:rotate(0deg)}to{-o-transform:rotate(360deg)}}@-ms-keyframes loading{from{-ms-transform:rotate(0deg)}to{-ms-transform:rotate(360deg)}}@keyframes loading{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+a:active, a:hover {
+	outline:0;
+	text-decoration: none;
+}
+
+.hide {
+	display: none!important;
+}
+
+.stretch {
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+}
+
+.wrapper {
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+/* HTML5 DECLARATIONS */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {display: block}
+audio[controls],canvas,video {display: inline-block; *display: inline; zoom: 1}
+
+/* BASE */
+html {height: 100%; font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; background-color: #f9f9f9; overflow-x: hidden;} /* Force scrollbar in non-IE and Remove iOS text size adjust without disabling user zoom */
+body {margin: 0; min-height: 100%; -webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility;} /* Improve default text rendering, handling of kerning pairs and ligatures */
+
+/* DEFAULT FONT SETTINGS */
+body, button, input, select, textarea {font: 12px/18px @arial; *font-size: 1em; color: #333} /* IE7 and older can't resize px based text */
+
+button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
+
+button { cursor: pointer; }
+
+/* HYPERLINKS */
+a {text-decoration: none; color:#bf1216}
+a:focus {outline: thin dotted}
+a:hover, a:active {outline: none} /* Better CSS Outline Suppression */
+
+/* MEDIA */
+figure {margin: 0}
+img, object, embed, video {max-width: 100%;	_width: 100%} /* Fluid images */
+img {border: 0;	-ms-interpolation-mode: bicubic} /* Improve IE's resizing of images */
+svg:not(:root) {overflow: hidden} /* Correct IE9 overflow */
+
+select {
+	padding: 4px;
+	-moz-appearance: none;
+	appearance: none;
+	background: #fff;
+	border: 1px solid #c2c2c2;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	-o-background-size: auto 100%;
+	background-size: auto 100%;
+	border-radius: 3px;
+	line-height: 20px;
+	border: 1px solid;
+	border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+	border-radius: 2px;
+	outline: 4px solid #eff4f7;
+}
+
+select:focus {
+	border-color: #7dc9e2;
+	outline-color: #dceefc;
+	outline-offset: 0;
+}

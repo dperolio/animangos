@@ -1,0 +1,164 @@
+.follow-me, .signup-form-but, #loginregister-but, #loginregister-but-mobile {
+    height: 28px;
+    .gradient(#1a63bd, #003b6d);
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 2px 10px;
+    text-align: center;
+    color: #eee;
+    font-weight: bold;
+    box-shadow: rgba(255,255,255,0.15) 0 1px 0 inset;
+    z-index: 2;
+    float: left;
+    display: none;
+    margin-right: 2px;
+    width: 80px;
+    cursor: pointer;
+    &:hover {
+    	.gradient(#347fdb, #0d5ea2);
+    	//.gradient(#333, #111);
+	}
+	.icon {
+		padding-right: 7px;
+	}
+}
+
+.follow-me.following .icon {
+	display: none;
+}
+
+.follow-me.following, .signup-form-but {
+	.gradient(#b91a19,#6e010b);
+	&:hover {
+    	.gradient(#db3434, #a20d0d);
+    }
+}
+
+#loginregister-but, #loginregister-but-mobile {
+	width: 130px;
+	margin-top: 10px;
+	padding-top: 5px;
+	display: none;
+	height: 32px;
+	margin-right: 15px;
+}
+
+#loginregister-but-mobile {
+	margin: 20px 24px;
+	display: block;
+}
+
+.signup-form-but {
+	display: block;
+	float: right;
+	margin-top: 20px;
+}
+
+.profile-buts .fol-me-me {
+	display: none;
+}
+
+.prof-but {
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 2px 10px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    box-shadow: rgba(255,255,255,0.15) 0 1px 0 inset;
+    z-index: 2;
+    float: left;
+    display: block;
+    margin-right: 2px;
+     &:hover {
+        background-color: #eee;
+    }
+    .icon {
+        padding-right: 7px;
+    }
+    .icon.userico {
+        font-size: 18px;
+        line-height: 22px;
+        display: inline;
+        &:after {
+        	content: '';
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 4px solid #333;
+			position: absolute;
+			top: 12px;
+		}
+    }
+    .icon.messages {
+        padding: 0;
+        font-size: 15px;
+    }
+    .fakedown {
+        font-size: 9px;
+        position: relative;
+        top: -2px;
+    }
+}
+
+.item-but {
+	width: 26px;
+	height: 26px;
+	vertical-align: middle;
+	opacity: 0.8;
+	border: none;
+	border-radius: 50%;
+	margin-right: 6px;
+	text-align: center;
+	padding-left: 6px;
+	background-color: #fff;
+	padding-top: 1px;
+	.transition(opacity 0.2s ease-in-out);
+	.icon {
+		font-size: 16px;
+		line-height: 26px;
+		color: #333;
+	}
+	.icon.star {
+		line-height: 20px;
+	}
+	.plus {
+		font-size: 30px;
+		vertical-align: middle;
+	}
+	&:hover {
+		opacity: 1;
+		.transition(opacity 0.2s ease-in-out);
+	}
+}
+
+.clear-rating {
+	background: #fff;
+	display: none;
+	border: none;
+	font-size: 24px;
+	color: #111;
+	width: 25px;
+	height: 25px;
+	margin: 0 -11px 85px 0;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+	.icon {
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+}
+
+.item-but.add-but {
+	padding: 0;
+}
+
+.item-but.rate-but {
+	padding-top: 0;
+}
